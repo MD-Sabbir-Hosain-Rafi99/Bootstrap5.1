@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hub - Job 2 Resources</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        /* Section "job-2" styling */
+        #job-2 {
+            padding: 3.5rem 0 5rem;
+        }
+
+        .section-badge {
+            background: #e0e7ff;
+            color: #4338ca;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0.4rem 0.9rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-title {
+            font-weight: 800;
+            font-size: 2.25rem;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+
+        /* Card Styling */
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12);
+            border-color: #cbd5e1;
+        }
+
+        .card-banner {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .card-banner i {
+            font-size: 3.2rem;
+            color: #ffffff;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .card-banner i {
+            transform: scale(1.1);
+        }
+
+        .card-category-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
+            color: #0f172a;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            text-transform: uppercase;
+        }
+
+        .card-body-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 0.88rem;
+            color: #64748b;
+            margin-bottom: 1.25rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .tech-pill {
+            font-size: 0.72rem;
+            font-weight: 600;
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+        }
+
+        /* Download Button */
+        .btn-download-zip {
+            background: #0f172a;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 10px;
+            padding: 0.7rem 1.2rem;
+            border: none;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        .btn-download-zip:hover {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+        }
+
+        .btn-download-zip:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        /* Gradients for Card Banners */
+        .bg-gradient-blue {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+
+        .bg-gradient-purple {
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        }
+
+        .bg-gradient-emerald {
+            background: linear-gradient(135deg, #10b981, #047857);
+        }
+
+        .bg-gradient-rose {
+            background: linear-gradient(135deg, #f43f5e, #be123c);
+        }
+
+        .bg-gradient-amber {
+            background: linear-gradient(135deg, #f59e0b, #b45309);
+        }
+
+        .bg-gradient-indigo {
+            background: linear-gradient(135deg, #6366f1, #4338ca);
+        }
+
+        /* Toast Notification */
+        .toast-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1090;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <!-- MAIN SECTION: job-1 -->
+    <section id="job-1" class="mt-4">
+        <div class="container">
+
+           
+            <h1>Job-1</h1>
+            <!-- Cards Grid -->
+            <div class="row g-4">
+
+                <!-- Card 1: News Portal Template -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        
+                        <div class="card-body-content">
+                            <h3 class="card-title-text">Job-1</h3>
+                            <p class="card-desc">Job-1 sob file ache konta asche agy ZIP File UnZip kore then check korben then oi file rekhe baki file delete kore diben</p>
+
+                            <!-- বাটনের কোড -->
+                            <a href="./files/WEB DESIGN_Job 1_Solve.zip" download="Job-1.zip" class="btn btn-primary">
+                                <i class="fas fa-download"></i> Download ZIP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+    <!-- MAIN SECTION: job-2 -->
+    <section id="job-2">
+        <div class="container">
+
+           
+            <h1>Job-2</h1>
+            <!-- Cards Grid -->
+            <div class="row g-4">
+
+                <!-- Card 1: News Portal Template -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        
+                        <div class="card-body-content">
+                            <h3 class="card-title-text">News Portal Complete Source</h3>
+                            <p class="card-desc">Full 6-page responsive news portal including breaking news marquee
+                                ticker, author desk, and reporter authentication.</p>
+
+                            <div class="d-flex flex-wrap gap-1 mb-4">
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">Bootstrap 5</span>
+                                <span class="tech-pill">JavaScript</span>
+                            </div>
+
+                            <!-- বাটনের কোড -->
+                            <a href="./files/News.zip" download="NewsPortal.zip" class="btn btn-primary">
+                                <i class="fas fa-download"></i> Download ZIP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JSZip library for creating real zip files in browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- FileSaver.js to prompt download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <script>
+        
+         
+
+        
+    </script>
+</body>
+
+</html>
