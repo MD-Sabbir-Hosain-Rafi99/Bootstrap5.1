@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <div class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div
+                    class="col-md-6 col-12 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@idealmodel.edu.bd</span>
+                    <span><i class="fa-solid fa-phone text-warning me-1"></i> +880 1712-345678</span>
+                </div>
+                <div
+                    class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3 mt-1 mt-md-0">
+                    <!-- Live Date and Time container -->
+                    <span class="badge bg-dark border border-secondary text-info px-2 py-1">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i>
+                        <span id="liveDateTime">Loading time...</span>
+                    </span>
+                    <a href="javascript:void(0)" onclick="navigateTo('login-page')"
+                        class="btn btn-sm btn-outline-light px-3 py-0 fw-semibold" style="font-size: 0.82rem;">
+                        <i class="fa-solid fa-arrow-right-to-bracket me-1 text-warning"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="javascript:void(0)" onclick="navigateTo('home-page')">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&auto=format&fit=crop&q=80"
+                    alt="School Logo" onerror="this.src='https://placehold.co/50x50/0d47a1/ffffff?text=IMS'">
+                <div>
+                    <span class="d-block lh-1 text-primary">IDEAL MODEL</span>
+                    <small class="text-muted fw-normal" style="font-size: 0.72rem; letter-spacing: 1px;">HIGH SCHOOL &
+                        COLLEGE</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-home-page" href="HomePage.html"><i
+                                class="fa-solid fa-house-chimney me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about-page" href="AboutPage.html"><i
+                                class="fa-solid fa-circle-info me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-teacher-page" href="TeacherPage.html"><i
+                                class="fa-solid fa-chalkboard-user me-1"></i> Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-student-page" href="StudentPage.html"><i
+                                class="fa-solid fa-graduation-cap me-1"></i> Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-result-page" href="ResultPage.html"><i
+                                class="fa-solid fa-square-poll-vertical me-1"></i> Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-academic-page" href="AcademicPage.html"><i
+                                class="fa-solid fa-book-bookmark me-1"></i> Academic</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark px-3 py-1 mt-1 mt-lg-0" id="nav-login-page"
+                            href="PortalLogin.html"><i class="fa-solid fa-user-lock me-1"></i> Portal
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+
+    <main id="" class="">
+        <!-- i. Breadcrumb Section -->
+        <div class="custom-breadcrumb">
+            <div class="container text-center text-md-start">
+                <h1 class="fw-bold">Academic Results Portal</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="HomePage.html" onclick="navigateTo('home-page')"><i
+                                    class="fa-solid fa-house me-1"></i> Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Results</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <!-- ii. Student Result Search Section (Department Wise, Student Id Wise) -->
+            <section class="bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-5 border-top border-4 border-primary">
+                <div class="section-title text-start mb-4">
+                    <h3 class="fw-bold text-dark"><i class="fa-solid fa-magnifying-glass me-2 text-primary"></i> Search
+                        Student Result</h3>
+                    <p class="m-0">Select your academic department and input your Student ID or Roll number.</p>
+                </div>
+
+                <form id="resultSearchForm" onsubmit="handleResultSearch(event)">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label fw-semibold">Select Department / Group</label>
+                            <select id="resultDept" class="form-select form-select-lg" required>
+                                <option value="" selected disabled>-- Choose Department --</option>
+                                <option value="Science">Science</option>
+                                <option value="Business Studies">Business Studies (Commerce)</option>
+                                <option value="Humanities">Humanities (Arts)</option>
+                                <option value="General">Junior High (Class 6 - 8)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-semibold">Exam Year / Term</label>
+                            <select id="resultYear" class="form-select form-select-lg">
+                                <option value="2026">2026 - Mid Term</option>
+                                <option value="2025">2025 - Annual Exam</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-semibold">Student ID / Roll No</label>
+                            <input type="text" id="resultStudentId" class="form-control form-select-lg"
+                                placeholder="e.g. 101, 102, 103" required>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">
+                                <i class="fa-solid fa-search me-1"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Mock Result Display Container -->
+                <div id="resultOutputContainer" class="mt-4" style="display: none;">
+                    <div class="alert alert-success border-2 shadow-sm rounded-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <h5 class="fw-bold mb-0 text-success" id="resStudentName">MD. ARIFUL ISLAM</h5>
+                                <small class="text-muted" id="resMetaInfo">ID: 101 | Department: Science | Class:
+                                    10</small>
+                            </div>
+                            <span class="badge bg-success fs-6 px-3 py-2" id="resGpaBadge">GPA: 5.00 (A+)</span>
+                        </div>
+                        <div class="table-responsive bg-white rounded shadow-sm">
+                            <table class="table table-bordered table-striped mb-0 text-center">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Subject Name</th>
+                                        <th>Full Marks</th>
+                                        <th>Obtained Marks</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resSubjectList">
+                                    <!-- Populated via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-end mt-3">
+                            <button class="btn btn-outline-dark btn-sm" onclick="window.print()"><i
+                                    class="fa-solid fa-print me-1"></i> Print Marksheet</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- iii. Last Year Result Section -->
+            <section class="bg-light p-4 p-lg-5 rounded-4 border shadow-sm">
+                <div class="section-title">
+                    <h2>Last Year Academic Statistics (2025)</h2>
+                    <div class="divider"></div>
+                    <p>Outstanding outcomes achieved across SSC, HSC, and Junior High board examinations.</p>
+                </div>
+
+                <div class="row g-4 text-center mb-4">
+                    <div class="col-md-3 col-6">
+                        <div class="bg-white p-4 rounded-4 shadow-sm">
+                            <h2 class="text-primary fw-bold mb-1">99.4%</h2>
+                            <p class="text-muted mb-0 fw-semibold">SSC Pass Rate</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="bg-white p-4 rounded-4 shadow-sm">
+                            <h2 class="text-success fw-bold mb-1">214</h2>
+                            <p class="text-muted mb-0 fw-semibold">Total GPA 5.00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="bg-white p-4 rounded-4 shadow-sm">
+                            <h2 class="text-warning fw-bold mb-1">98.8%</h2>
+                            <p class="text-muted mb-0 fw-semibold">HSC Pass Rate</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="bg-white p-4 rounded-4 shadow-sm">
+                            <h2 class="text-info fw-bold mb-1">160+</h2>
+                            <p class="text-muted mb-0 fw-semibold">Board Scholarships</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive bg-white rounded-4 shadow-sm p-3">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Exam Level</th>
+                                <th>Candidates</th>
+                                <th>Passed</th>
+                                <th>GPA 5.00 (A+)</th>
+                                <th>Pass Percentage</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>SSC Examination 2025</strong></td>
+                                <td>380</td>
+                                <td>378</td>
+                                <td>142</td>
+                                <td><span class="badge bg-success">99.47%</span></td>
+                                <td><span class="badge bg-primary">Published</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>HSC Examination 2025</strong></td>
+                                <td>290</td>
+                                <td>287</td>
+                                <td>72</td>
+                                <td><span class="badge bg-success">98.96%</span></td>
+                                <td><span class="badge bg-primary">Published</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Junior Scholarship Exam 2025</strong></td>
+                                <td>150</td>
+                                <td>150</td>
+                                <td>48</td>
+                                <td><span class="badge bg-success">100%</span></td>
+                                <td><span class="badge bg-primary">Published</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Footer Section Start -->
+    <footer class="big-footer">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <!-- Col 1: Brand details -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold">Ideal Model School</h5>
+                    <p class="text-secondary small leading-relaxed">
+                        Committed to cultivating intellectual curiosity, moral responsibility, and global leadership
+                        in
+                        young learners through world-standard education.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('home-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Home</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('about-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> About Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('teacher-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Faculty</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('student-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Students</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('result-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Results</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Academic Sections -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5>Academics</h5>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Science Wing</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Business Wing</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Humanities Wing</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Academic Calendar</a></li>
+                        <li><a href="javascript:void(0)" onclick="navigateTo('login-page')"><i
+                                    class="fa-solid fa-angle-right me-1"></i> Student Portal</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Contact & Location info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Get In Touch</h5>
+                    <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+                        <li><i class="fa-solid fa-location-dot text-warning me-2"></i> Plot 12, Road 05, Sector 4,
+                            Uttara, Dhaka-1230</li>
+                        <li><i class="fa-solid fa-phone text-warning me-2"></i> +880 1712-345678, 02-9876543</li>
+                        <li><i class="fa-solid fa-envelope text-warning me-2"></i> admissions@idealmodel.edu.bd</li>
+                        <li><i class="fa-solid fa-clock text-warning me-2"></i> Sun - Thu: 8:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ix. Footer Section (Banglish: Copyright sub-footer) -->
+        <div class="sub-footer">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                        &copy; 2026 <strong>Ideal Model High School & College</strong>. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

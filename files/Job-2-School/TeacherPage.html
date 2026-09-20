@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header Section Start -->
+    <div class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div
+                    class="col-md-6 col-12 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@idealmodel.edu.bd</span>
+                    <span><i class="fa-solid fa-phone text-warning me-1"></i> +880 1712-345678</span>
+                </div>
+                <div
+                    class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3 mt-1 mt-md-0">
+                    <!-- Live Date and Time container -->
+                    <span class="badge bg-dark border border-secondary text-info px-2 py-1">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i>
+                        <span id="liveDateTime">Loading time...</span>
+                    </span>
+                    <a href="javascript:void(0)" onclick="navigateTo('login-page')"
+                        class="btn btn-sm btn-outline-light px-3 py-0 fw-semibold" style="font-size: 0.82rem;">
+                        <i class="fa-solid fa-arrow-right-to-bracket me-1 text-warning"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="javascript:void(0)" onclick="navigateTo('home-page')">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&auto=format&fit=crop&q=80"
+                    alt="School Logo" onerror="this.src='https://placehold.co/50x50/0d47a1/ffffff?text=IMS'">
+                <div>
+                    <span class="d-block lh-1 text-primary">IDEAL MODEL</span>
+                    <small class="text-muted fw-normal" style="font-size: 0.72rem; letter-spacing: 1px;">HIGH SCHOOL &
+                        COLLEGE</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-home-page" href="HomePage.html"><i
+                                class="fa-solid fa-house-chimney me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about-page" href="AboutPage.html"><i
+                                class="fa-solid fa-circle-info me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-teacher-page" href="TeacherPage.html"><i
+                                class="fa-solid fa-chalkboard-user me-1"></i> Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-student-page" href="StudentPage.html"><i
+                                class="fa-solid fa-graduation-cap me-1"></i> Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-result-page" href="ResultPage.html"><i
+                                class="fa-solid fa-square-poll-vertical me-1"></i> Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-academic-page" href="AcademicPage.html"><i
+                                class="fa-solid fa-book-bookmark me-1"></i> Academic</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark px-3 py-1 mt-1 mt-lg-0" id="nav-login-page"
+                            href="PortalLogin.html"><i class="fa-solid fa-user-lock me-1"></i> Portal
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+
+
+    <main id="" class="">
+        <!-- i. Breadcrumb Section -->
+        <div class="custom-breadcrumb">
+            <div class="container text-center text-md-start">
+                <h1 class="fw-bold">Faculty Members</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="HomePage.html"><i
+                                    class="fa-solid fa-house me-1"></i> Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Teachers</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <!-- ii. Math Teacher Section (using bootstrap card) -->
+            <div class="d-flex align-items-center gap-2 mb-4 border-bottom pb-2">
+                <div class="bg-primary text-white p-2 rounded"><i class="fa-solid fa-square-root-variable"></i></div>
+                <h3 class="fw-bold text-dark mb-0">Mathematics Department</h3>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80"
+                                alt="Rashida Sultana"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Rashida Sultana</h5>
+                            <span class="badge bg-primary mb-2">Associate Professor & Head</span>
+                            <p class="text-muted small">Specialized in Higher Calculus and Vector Analysis with 18 years
+                                teaching tenure.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                r.sultana@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=80"
+                                alt="Kamal Hossain"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Kamal Hossain, M.Sc</h5>
+                            <span class="badge bg-secondary mb-2">Senior Lecturer (Math)</span>
+                            <p class="text-muted small">Specialist in Geometry, Trigonometry and Math Olympiad student
+                                training coach.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                k.hossain@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=80"
+                                alt="Nusrat Jahan"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Nusrat Jahan, B.Sc</h5>
+                            <span class="badge bg-info text-dark mb-2">Junior Math Specialist</span>
+                            <p class="text-muted small">Dedicated to simplifying elementary arithmetic & algebra for
+                                junior classes.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                n.jahan@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iii. English Teacher Section (using bootstrap card) -->
+            <div class="d-flex align-items-center gap-2 mb-4 border-bottom pb-2">
+                <div class="bg-success text-white p-2 rounded"><i class="fa-solid fa-spell-check"></i></div>
+                <h3 class="fw-bold text-dark mb-0">English Language & Literature Department</h3>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80"
+                                alt="Dr. Anwar Hossain"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Dr. Anwar Hossain</h5>
+                            <span class="badge bg-success mb-2">Professor & Department Head</span>
+                            <p class="text-muted small">Ph.D in Applied Linguistics, British Council verified master
+                                trainer for English.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                anwar.h@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=80"
+                                alt="Saifuddin Ahmed"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Saifuddin Ahmed, M.A</h5>
+                            <span class="badge bg-secondary mb-2">Assistant Professor</span>
+                            <p class="text-muted small">Expert in English Literature, creative composition, and
+                                inter-school debate coaching.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                s.ahmed@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=500&auto=format&fit=crop&q=80"
+                                alt="Tahmina Chowdhury"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Tahmina Chowdhury</h5>
+                            <span class="badge bg-info text-dark mb-2">Lecturer</span>
+                            <p class="text-muted small">Specialized in communicative phonetics, reading comprehension
+                                and spoken English.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                tahmina@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iv. Bangla Teacher Section (using bootstrap card) -->
+            <div class="d-flex align-items-center gap-2 mb-4 border-bottom pb-2">
+                <div class="bg-warning text-dark p-2 rounded"><i class="fa-solid fa-pen-nib"></i></div>
+                <h3 class="fw-bold text-dark mb-0">Bangla Language & Literature Department</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80"
+                                alt="Farzana Akter"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Farzana Akter, M.A</h5>
+                            <span class="badge bg-warning text-dark mb-2">Head of Bangla</span>
+                            <p class="text-muted small">Prominent scholar on Rabindra-Nazrul literature and lead of
+                                drama society.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                f.akter@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=80"
+                                alt="Abdur Razzak"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Abdur Razzak, M.A</h5>
+                            <span class="badge bg-secondary mb-2">Senior Bangla Teacher</span>
+                            <p class="text-muted small">Specialist in Bengali Grammar, linguistic syntax, and essay
+                                structuring.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                a.razzak@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom">
+                        <div class="teacher-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=500&auto=format&fit=crop&q=80"
+                                alt="Meherun Nesa"
+                                onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Teacher'">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h5 class="fw-bold mb-1">Meherun Nesa, B.Ed</h5>
+                            <span class="badge bg-info text-dark mb-2">Junior Faculty</span>
+                            <p class="text-muted small">Creative writing instructor and recitation mentor for junior
+                                high school students.</p>
+                            <div class="text-secondary small"><i class="fa-regular fa-envelope me-1"></i>
+                                m.nesa@idealmodel.edu.bd</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

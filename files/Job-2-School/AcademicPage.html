@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Header Section Start -->
+    <div class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div
+                    class="col-md-6 col-12 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@idealmodel.edu.bd</span>
+                    <span><i class="fa-solid fa-phone text-warning me-1"></i> +880 1712-345678</span>
+                </div>
+                <div
+                    class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3 mt-1 mt-md-0">
+                    <!-- Live Date and Time container -->
+                    <span class="badge bg-dark border border-secondary text-info px-2 py-1">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i>
+                        <span id="liveDateTime">Loading time...</span>
+                    </span>
+                    <a href="javascript:void(0)" onclick="navigateTo('login-page')"
+                        class="btn btn-sm btn-outline-light px-3 py-0 fw-semibold" style="font-size: 0.82rem;">
+                        <i class="fa-solid fa-arrow-right-to-bracket me-1 text-warning"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="HomePage.html" onclick="navigateTo('home-page')">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&auto=format&fit=crop&q=80"
+                    alt="School Logo" onerror="this.src='https://placehold.co/50x50/0d47a1/ffffff?text=IMS'">
+                <div>
+                    <span class="d-block lh-1 text-primary">IDEAL MODEL</span>
+                    <small class="text-muted fw-normal" style="font-size: 0.72rem; letter-spacing: 1px;">HIGH SCHOOL &
+                        COLLEGE</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-home-page" href="HomePage.html"><i
+                                class="fa-solid fa-house-chimney me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about-page" href="AboutPage.html"><i
+                                class="fa-solid fa-circle-info me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-teacher-page" href="TeacherPage.html"><i
+                                class="fa-solid fa-chalkboard-user me-1"></i> Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-student-page" href="StudentPage.html"><i
+                                class="fa-solid fa-graduation-cap me-1"></i> Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-result-page" href="ResultPage.html"><i
+                                class="fa-solid fa-square-poll-vertical me-1"></i> Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-academic-page" onclick="navigateTo('academic-page')"><i
+                                class="fa-solid fa-book-bookmark me-1"></i> Academic</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark px-3 py-1 mt-1 mt-lg-0" id="nav-login-page"
+                           href="PortalLogin.html"><i class="fa-solid fa-user-lock me-1"></i> Portal
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <main id="" class="">
+        <!-- i. Breadcrumb Section -->
+        <div class="custom-breadcrumb">
+            <div class="container text-center text-md-start">
+                <h1 class="fw-bold">Academic Curriculum & Schedule</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="HomePage.html" onclick="navigateTo('home-page')"><i
+                                    class="fa-solid fa-house me-1"></i> Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Academic</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <!-- ii. Department wise Section -->
+            <section class="mb-5">
+                <div class="section-title">
+                    <h2>Our Specialized Departments</h2>
+                    <div class="divider"></div>
+                    <p>Curricula compliant with National Education Policy and digital STEM enhancements.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card card-custom p-4 border-top border-4 border-primary">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="fa-solid fa-flask-vial text-primary fs-2"></i>
+                                <h4 class="fw-bold mb-0">Science Faculty</h4>
+                            </div>
+                            <p class="text-secondary small">Equipped with physics, chemistry, and biology labs with
+                                individual apparatus for every student.</p>
+                            <h6 class="fw-bold text-dark mt-2 mb-2">Key Subjects:</h6>
+                            <ul class="text-secondary small ps-3">
+                                <li>Physics & Advanced Dynamics</li>
+                                <li>Chemistry & Organic Labs</li>
+                                <li>Higher Mathematics & Stats</li>
+                                <li>Biology, Genetics & Botany</li>
+                                <li>Information & Communication Tech (ICT)</li>
+                            </ul>
+                            <button class="btn btn-outline-primary btn-sm mt-3 w-100"
+                                onclick="downloadNoticePdf('Science_Syllabus.pdf')">
+                                <i class="fa-solid fa-file-pdf me-1"></i> Download Syllabus
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-custom p-4 border-top border-4 border-success">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="fa-solid fa-coins text-success fs-2"></i>
+                                <h4 class="fw-bold mb-0">Business Studies</h4>
+                            </div>
+                            <p class="text-secondary small">Focusing on modern commerce, financial bookkeeping,
+                                practical banking, and global trade.</p>
+                            <h6 class="fw-bold text-dark mt-2 mb-2">Key Subjects:</h6>
+                            <ul class="text-secondary small ps-3">
+                                <li>Principles of Accounting</li>
+                                <li>Business Organization & Management</li>
+                                <li>Finance, Banking & Insurance</li>
+                                <li>Commercial Geography</li>
+                                <li>Information & Communication Tech (ICT)</li>
+                            </ul>
+                            <button class="btn btn-outline-success btn-sm mt-3 w-100"
+                                onclick="downloadNoticePdf('Business_Syllabus.pdf')">
+                                <i class="fa-solid fa-file-pdf me-1"></i> Download Syllabus
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-custom p-4 border-top border-4 border-warning">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <i class="fa-solid fa-earth-americas text-warning fs-2"></i>
+                                <h4 class="fw-bold mb-0">Humanities & Arts</h4>
+                            </div>
+                            <p class="text-secondary small">Cultivating linguistic eloquence, civic duty, historical
+                                appreciation, and philosophical inquiry.</p>
+                            <h6 class="fw-bold text-dark mt-2 mb-2">Key Subjects:</h6>
+                            <ul class="text-secondary small ps-3">
+                                <li>Civics, Governance & Constitution</li>
+                                <li>World History & Heritage</li>
+                                <li>Economics & Public Policy</li>
+                                <li>Sociology & Social Welfare</li>
+                                <li>Bangla & English Literature Electives</li>
+                            </ul>
+                            <button class="btn btn-outline-warning text-dark btn-sm mt-3 w-100"
+                                onclick="downloadNoticePdf('Humanities_Syllabus.pdf')">
+                                <i class="fa-solid fa-file-pdf me-1"></i> Download Syllabus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- iii. Academic Calendar Section -->
+            <section class="bg-white p-4 p-lg-5 rounded-4 shadow-sm">
+                <div class="section-title">
+                    <h2>Academic Calendar 2026 - 2027</h2>
+                    <div class="divider"></div>
+                    <p>Important term schedules, mid-term examinations, sports tournaments, and holiday schedules.</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped text-center align-middle">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Term / Event</th>
+                                <th>Event Description</th>
+                                <th>Starting Date</th>
+                                <th>Ending Date</th>
+                                <th>Action / Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge bg-primary">Term 1</span></td>
+                                <td class="text-start">First Term Mid-Term Assessment & Progress Report</td>
+                                <td>March 15, 2026</td>
+                                <td>March 25, 2026</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-info text-dark">Vacation</span></td>
+                                <td class="text-start">Summer Vacation & Ramadan Holidays</td>
+                                <td>April 02, 2026</td>
+                                <td>April 24, 2026</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-warning text-dark">Sports</span></td>
+                                <td class="text-start">Annual Athletic Meet & Inter-Class Football League</td>
+                                <td>September 28, 2026</td>
+                                <td>October 04, 2026</td>
+                                <td><span class="badge bg-warning text-dark">Upcoming</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-danger">Term 2</span></td>
+                                <td class="text-start">Second Mid-Term & Final Pre-Test Evaluations</td>
+                                <td>October 15, 2026</td>
+                                <td>October 30, 2026</td>
+                                <td><span class="badge bg-danger">Upcoming</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-dark">Final Exam</span></td>
+                                <td class="text-start">Annual Board Model Test and Final Promotional Examinations</td>
+                                <td>November 25, 2026</td>
+                                <td>December 15, 2026</td>
+                                <td><span class="badge bg-secondary">Scheduled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-3">
+                    <button class="btn btn-outline-primary"
+                        onclick="downloadNoticePdf('Academic_Calendar_2026_Full.pdf')">
+                        <i class="fa-solid fa-calendar-arrow-down me-1"></i> Download PDF Calendar
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Footer Section Start -->
+        <footer class="big-footer">
+            <div class="container pb-5">
+                <div class="row g-4">
+                    <!-- Col 1: Brand details -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="fw-bold">Ideal Model School</h5>
+                        <p class="text-secondary small leading-relaxed">
+                            Committed to cultivating intellectual curiosity, moral responsibility, and global leadership
+                            in
+                            young learners through world-standard education.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('home-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Home</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('about-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> About Us</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('teacher-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Faculty</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('student-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Students</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('result-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Results</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Academic Sections -->
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <h5>Academics</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Science Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Business Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Humanities Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Academic Calendar</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('login-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Student Portal</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Contact & Location info -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Get In Touch</h5>
+                        <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+                            <li><i class="fa-solid fa-location-dot text-warning me-2"></i> Plot 12, Road 05, Sector 4,
+                                Uttara, Dhaka-1230</li>
+                            <li><i class="fa-solid fa-phone text-warning me-2"></i> +880 1712-345678, 02-9876543</li>
+                            <li><i class="fa-solid fa-envelope text-warning me-2"></i> admissions@idealmodel.edu.bd</li>
+                            <li><i class="fa-solid fa-clock text-warning me-2"></i> Sun - Thu: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ix. Footer Section (Banglish: Copyright sub-footer) -->
+            <div class="sub-footer">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                            &copy; 2026 <strong>Ideal Model High School & College</strong>. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

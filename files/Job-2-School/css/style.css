@@ -1,0 +1,378 @@
+:root {
+    --primary-color: #0d47a1;
+    --primary-dark: #002171;
+    --accent-color: #ff9800;
+    --accent-hover: #f57c00;
+    --secondary-bg: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+}
+
+/* ========================================================
+   Banglish Comment: Navbar er nicher underline ebong 
+   active border shompurno bondho korar jonno code
+   ======================================================== */
+
+/* 1. Pseudo-element (:after/:before) diye toiri kora line remove kora */
+.navbar-nav .nav-link::after,
+.navbar-nav .nav-link::before,
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* 2. Border ba underline thakle setao bondho kora */
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ========================================================
+   Banglish Comment: Breadcrumb er link theke underline 
+   ebong hover line bondho korar CSS
+   ======================================================== */
+
+.custom-breadcrumb .breadcrumb-item a,
+.custom-breadcrumb .breadcrumb-item a:hover,
+.custom-breadcrumb .breadcrumb-item a:focus {
+    text-decoration: none !important;
+    /* Kono underline thakbe na */
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+/* Breadcrumb er / ba divider color thik rakhar jonno */
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: #f1f5f9;
+    overflow-x: hidden;
+}
+
+/* Top Header Styling */
+.top-header {
+    background-color: var(--primary-dark);
+    color: #e2e8f0;
+    font-size: 0.86rem;
+    padding: 7px 0;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.top-header a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-header a:hover {
+    color: var(--accent-color);
+}
+
+/* Full-Width Navigation Bar */
+.main-navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-brand img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #334155 !important;
+    padding: 12px 18px !important;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect requirement #2 */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 75%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Page Content Switcher (SPA Engine) */
+.page-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+    min-height: 70vh;
+}
+
+.page-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Breadcrumb Section */
+.custom-breadcrumb {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 40px 0 35px 0;
+    margin-bottom: 40px;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.custom-breadcrumb .breadcrumb {
+    margin-bottom: 0;
+}
+
+.custom-breadcrumb a {
+    color: #fbd38d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Section Headings */
+.section-title {
+    position: relative;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+}
+
+.section-title .divider {
+    width: 70px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Cards and Elements Styling */
+.card-custom {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+    height: 100%;
+}
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Notice Board */
+.notice-board {
+    background: #fff;
+    border-radius: 12px;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.notice-item {
+    padding: 14px 18px;
+    border-bottom: 1px dashed #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s;
+}
+
+.notice-item:last-child {
+    border-bottom: none;
+}
+
+.notice-item:hover {
+    background-color: #f8fafc;
+}
+
+/* Carousel Hero Slider */
+.carousel-item {
+    height: 520px;
+    background-color: #1e293b;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+.carousel-caption {
+    bottom: 25%;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Teachers card image */
+.teacher-img-wrap {
+    height: 230px;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.teacher-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-custom:hover .teacher-img-wrap img {
+    transform: scale(1.08);
+}
+
+/* Footer styling */
+.big-footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    padding-top: 60px;
+    margin-top: 80px;
+    border-top: 5px solid var(--accent-color);
+}
+
+.big-footer h5 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.big-footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 3px;
+    background: var(--accent-color);
+}
+
+.big-footer a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.big-footer a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.sub-footer {
+    background: #090d16;
+    padding: 18px 0;
+    color: #64748b;
+    font-size: 0.88rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* ========================================================
+   Banglish: Mobile ba small screen e banner content show 
+   ebong font size sundor korar CSS
+   ======================================================== */
+
+.carousel-caption {
+    /* Background e halka kalo overlay jate text sposto bojha jay */
+    background: rgba(0, 0, 0, 0.45);
+    padding: 15px 12px !important;
+    border-radius: 10px;
+    bottom: 50% !important;
+    transform: translateY(50%);
+    width: 90%;
+    left: 5% !important;
+    right: 5% !important;
+}
+
+/* Small Device / Mobile View (768px er niche) */
+@media (max-width: 768px) {
+    .carousel-caption {
+        padding: 10px !important;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2 {
+        font-size: 1.15rem !important; /* Mobile e title choto kora */
+        margin-bottom: 6px !important;
+        line-height: 1.3 !important;
+    }
+
+    .carousel-caption p {
+        font-size: 0.78rem !important; /* Description choto kora */
+        margin-bottom: 8px !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 2 line er beshi boro hobe na */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.75rem !important; /* Button mobile e perfect size */
+        padding: 4px 10px !important;
+    }
+}

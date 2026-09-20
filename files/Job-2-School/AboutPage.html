@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div
+                    class="col-md-6 col-12 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@idealmodel.edu.bd</span>
+                    <span><i class="fa-solid fa-phone text-warning me-1"></i> +880 1712-345678</span>
+                </div>
+                <div
+                    class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3 mt-1 mt-md-0">
+                    <!-- Live Date and Time container -->
+                    <span class="badge bg-dark border border-secondary text-info px-2 py-1">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i>
+                        <span id="liveDateTime">Loading time...</span>
+                    </span>
+                    <a href="javascript:void(0)" onclick="navigateTo('login-page')"
+                        class="btn btn-sm btn-outline-light px-3 py-0 fw-semibold" style="font-size: 0.82rem;">
+                        <i class="fa-solid fa-arrow-right-to-bracket me-1 text-warning"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="javascript:void(0)" onclick="navigateTo('home-page')">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&auto=format&fit=crop&q=80"
+                    alt="School Logo" onerror="this.src='https://placehold.co/50x50/0d47a1/ffffff?text=IMS'">
+                <div>
+                    <span class="d-block lh-1 text-primary">IDEAL MODEL</span>
+                    <small class="text-muted fw-normal" style="font-size: 0.72rem; letter-spacing: 1px;">HIGH SCHOOL &
+                        COLLEGE</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-home-page" href="HomePage.html"><i
+                                class="fa-solid fa-house-chimney me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about-page" href="AboutPage.html"><i
+                                class="fa-solid fa-circle-info me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-teacher-page" href="TeacherPage.html"><i
+                                class="fa-solid fa-chalkboard-user me-1"></i> Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-student-page" href="StudentPage.html"><i
+                                class="fa-solid fa-graduation-cap me-1"></i> Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-result-page" href="ResultPage.html"><i
+                                class="fa-solid fa-square-poll-vertical me-1"></i> Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-academic-page" href="AcademicPage.html"><i
+                                class="fa-solid fa-book-bookmark me-1"></i> Academic</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark px-3 py-1 mt-1 mt-lg-0" id="nav-login-page"
+                            href="PortalLogin.html"><i class="fa-solid fa-user-lock me-1"></i> Portal
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="" class="">
+        <!-- i. Breadcrumb Section -->
+        <div class="custom-breadcrumb">
+            <div class="container text-center text-md-start">
+                <h1 class="fw-bold">About Our School</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="HomePage.html" ><i
+                                    class="fa-solid fa-house me-1"></i> Home</a></li>
+                        <li class="breadcrumb-item text-white" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <!-- ii. Detailed History Section -->
+            <section class="mb-5 bg-white p-4 p-lg-5 rounded-4 shadow-sm">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <span class="badge bg-primary-subtle text-primary px-3 py-2 fw-bold mb-2">Our Genesis</span>
+                        <h2 class="fw-bold text-dark mb-3">Our Three-Decade Journey</h2>
+                        <p class="text-secondary leading-relaxed">
+                            Founded in 1995 by an esteemed body of philanthropists and educationists, Ideal Model High
+                            School & College was envisioned as a beacon of modern enlightenment. Commencing with modest
+                            bamboo infrastructure, today the institution sprawls across a 5-acre scenic, eco-friendly
+                            campus featuring modern science, ICT, and robotics laboratories.
+                        </p>
+                        <p class="text-secondary">
+                            Over 15,000 alumni have graduated from this institute, moving on to prestigious engineering,
+                            medical, and public universities worldwide.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=700&auto=format&fit=crop&q=80"
+                            alt="School building" class="img-fluid rounded-4 shadow"
+                            onerror="this.src='https://placehold.co/600x380/0d47a1/ffffff?text=Our+Campus'">
+                    </div>
+                </div>
+            </section>
+
+            <!-- iii. Head Master Speech Section -->
+            <section class="mb-5 bg-light p-4 p-lg-5 rounded-4 border-start border-5 border-primary shadow-sm">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=80"
+                            class="rounded-circle img-thumbnail shadow mb-3"
+                            style="width: 190px; height: 190px; object-fit: cover;" alt="Headmaster"
+                            onerror="this.src='https://placehold.co/200x200/0d47a1/ffffff?text=Headmaster'">
+                        <h5 class="fw-bold mb-0">Prof. Mohammad Shahidul Alam</h5>
+                        <small class="text-primary fw-semibold">Principal & Headmaster (M.Sc, M.Ed)</small>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="fw-bold text-dark mb-3"><i class="fa-solid fa-quote-left text-warning me-2"></i>
+                            Message From The Principal</h3>
+                        <blockquote class="text-secondary fst-italic leading-relaxed mb-3">
+                            "Education is not merely the transmission of textbook data; it is the ignite of conscience,
+                            character, and humanity. At Ideal Model High School & College, we prioritize mental agility
+                            alongside moral rectitude so our pupils stand confident in the global sphere while holding
+                            fast to their cultural roots."
+                        </blockquote>
+                        <div class="border-top pt-3 text-muted small">
+                            <strong>Signature:</strong> <span class="fst-italic font-monospace ms-2 text-primary">M. S.
+                                Alam (Principal)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- iv. Mission Vision Section -->
+            <section class="mb-5">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4 border-top border-4 border-primary">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-primary text-white p-3 rounded-circle"><i
+                                        class="fa-solid fa-bullseye fs-3"></i></div>
+                                <h3 class="fw-bold mb-0">Our Mission</h3>
+                            </div>
+                            <p class="text-secondary leading-relaxed">
+                                To cultivate an inclusive, technology-integrated, and values-centered academic
+                                environment that inspires students to achieve cognitive excellence, creative
+                                problem-solving capabilities, and empathetic citizenship.
+                            </p>
+                            <ul class="text-secondary small mb-0 ps-3">
+                                <li>Foster STEM and critical inquiry</li>
+                                <li>Preserve moral discipline and integrity</li>
+                                <li>Ensure equal opportunity for all learners</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-custom p-4 border-top border-4 border-warning">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="bg-warning text-dark p-3 rounded-circle"><i
+                                        class="fa-solid fa-eye fs-3"></i></div>
+                                <h3 class="fw-bold mb-0">Our Vision</h3>
+                            </div>
+                            <p class="text-secondary leading-relaxed">
+                                To become a premier national landmark in secondary and higher secondary education,
+                                producing globally capable leaders, researchers, and innovators who contribute
+                                proactively to human civilization.
+                            </p>
+                            <ul class="text-secondary small mb-0 ps-3">
+                                <li>Smart digital campus infrastructure by 2030</li>
+                                <li>Holistic character and leadership building</li>
+                                <li>National athletic & robotics championships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- v. Administrative Staff Section -->
+            <section>
+                <div class="section-title">
+                    <h2>Administrative Staff</h2>
+                    <div class="divider"></div>
+                    <p>The operational backbone ensuring flawless management, student welfare, and campus support.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card card-custom text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80"
+                                class="rounded-circle mx-auto mb-3"
+                                style="width: 110px; height: 110px; object-fit: cover;" alt="Staff"
+                                onerror="this.src='https://placehold.co/110x110/0d47a1/ffffff?text=Staff+1'">
+                            <h5 class="fw-bold mb-1">M. K. Rahman</h5>
+                            <p class="text-primary small fw-semibold">Head Administrative Officer</p>
+                            <small class="text-muted"><i class="fa-solid fa-phone me-1"></i> Ext: 101 |
+                                admin@idealmodel.edu.bd</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80"
+                                class="rounded-circle mx-auto mb-3"
+                                style="width: 110px; height: 110px; object-fit: cover;" alt="Staff"
+                                onerror="this.src='https://placehold.co/110x110/0d47a1/ffffff?text=Staff+2'">
+                            <h5 class="fw-bold mb-1">Nasreen Sultana</h5>
+                            <p class="text-primary small fw-semibold">Chief Accounts & Bursar</p>
+                            <small class="text-muted"><i class="fa-solid fa-phone me-1"></i> Ext: 104 |
+                                accounts@idealmodel.edu.bd</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom text-center p-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80"
+                                class="rounded-circle mx-auto mb-3"
+                                style="width: 110px; height: 110px; object-fit: cover;" alt="Staff"
+                                onerror="this.src='https://placehold.co/110x110/0d47a1/ffffff?text=Staff+3'">
+                            <h5 class="fw-bold mb-1">Engr. Tanvir Ahmed</h5>
+                            <p class="text-primary small fw-semibold">System & IT Administrator</p>
+                            <small class="text-muted"><i class="fa-solid fa-phone me-1"></i> Ext: 108 |
+                                it@idealmodel.edu.bd</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Footer Section Start -->
+        <footer class="big-footer">
+            <div class="container pb-5">
+                <div class="row g-4">
+                    <!-- Col 1: Brand details -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="fw-bold">Ideal Model School</h5>
+                        <p class="text-secondary small leading-relaxed">
+                            Committed to cultivating intellectual curiosity, moral responsibility, and global leadership
+                            in
+                            young learners through world-standard education.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('home-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Home</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('about-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> About Us</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('teacher-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Faculty</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('student-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Students</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('result-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Results</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Academic Sections -->
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <h5>Academics</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Science Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Business Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Humanities Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Academic Calendar</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('login-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Student Portal</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Contact & Location info -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Get In Touch</h5>
+                        <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+                            <li><i class="fa-solid fa-location-dot text-warning me-2"></i> Plot 12, Road 05, Sector 4,
+                                Uttara, Dhaka-1230</li>
+                            <li><i class="fa-solid fa-phone text-warning me-2"></i> +880 1712-345678, 02-9876543</li>
+                            <li><i class="fa-solid fa-envelope text-warning me-2"></i> admissions@idealmodel.edu.bd</li>
+                            <li><i class="fa-solid fa-clock text-warning me-2"></i> Sun - Thu: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ix. Footer Section (Banglish: Copyright sub-footer) -->
+            <div class="sub-footer">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                            &copy; 2026 <strong>Ideal Model High School & College</strong>. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </main>
+
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 JavaScript Bundle -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

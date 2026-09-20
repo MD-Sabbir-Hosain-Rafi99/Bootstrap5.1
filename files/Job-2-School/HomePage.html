@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <div class="top-header">
+        <div class="container-fluid px-lg-5">
+            <div class="row align-items-center">
+                <div
+                    class="col-md-6 col-12 d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@idealmodel.edu.bd</span>
+                    <span><i class="fa-solid fa-phone text-warning me-1"></i> +880 1712-345678</span>
+                </div>
+                <div
+                    class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3 mt-1 mt-md-0">
+                    <!-- Live Date and Time container -->
+                    <span class="badge bg-dark border border-secondary text-info px-2 py-1">
+                        <i class="fa-regular fa-clock me-1 text-warning"></i>
+                        <span id="liveDateTime">Loading time...</span>
+                    </span>
+                    <a href="javascript:void(0)" onclick="navigateTo('login-page')"
+                        class="btn btn-sm btn-outline-light px-3 py-0 fw-semibold" style="font-size: 0.82rem;">
+                        <i class="fa-solid fa-arrow-right-to-bracket me-1 text-warning"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="javascript:void(0)" onclick="navigateTo('home-page')">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&auto=format&fit=crop&q=80"
+                    alt="School Logo" onerror="this.src='https://placehold.co/50x50/0d47a1/ffffff?text=IMS'">
+                <div>
+                    <span class="d-block lh-1 text-primary">IDEAL MODEL</span>
+                    <small class="text-muted fw-normal" style="font-size: 0.72rem; letter-spacing: 1px;">HIGH SCHOOL &
+                        COLLEGE</small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#schoolNavbar" aria-controls="schoolNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="schoolNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-home-page" href="HomePage.html"><i
+                                class="fa-solid fa-house-chimney me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about-page" href="AboutPage.html"><i
+                                class="fa-solid fa-circle-info me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-teacher-page" href="TeacherPage.html"><i
+                                class="fa-solid fa-chalkboard-user me-1"></i> Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-student-page" href="StudentPage.html"><i
+                                class="fa-solid fa-graduation-cap me-1"></i> Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-result-page" href="ResultPage.html"><i
+                                class="fa-solid fa-square-poll-vertical me-1"></i> Result</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-academic-page" href="AcademicPage.html"><i
+                                class="fa-solid fa-book-bookmark me-1"></i> Academic</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold text-dark px-3 py-1 mt-1 mt-lg-0" id="nav-login-page"
+                            href="PortalLogin.html"><i class="fa-solid fa-user-lock me-1"></i> Portal
+                            Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <!-- Full Home Page Start -->
+    <main id="home-page" class="page-content active">
+        <!-- Banner Section Start (Slider with 3 Images) -->
+        <section id="bannerSection">
+            <div id="schoolHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="4500">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&auto=format&fit=crop&q=80"
+                            class="d-block w-100" alt="Modern Campus"
+                            onerror="this.src='https://placehold.co/1600x520/0d47a1/ffffff?text=Modern+School+Campus'">
+                        <div class="carousel-caption  text-center container">
+                            <span class="badge bg-warning text-dark px-3 py-2 text-uppercase fw-bold mb-2">Excellence in
+                                Education</span>
+                            <h1 class="display-4 fw-bold">Inspiring Bright Minds for Tomorrow</h1>
+                            <p class="fs-5">Providing holistic academic, cultural, and moral excellence since 1995.</p>
+                            <a href="javascript:void(0)" onclick="navigateTo('academic-page')"
+                                class="btn btn-primary btn-lg me-2">Explore Curriculum</a>
+                            <a href="javascript:void(0)" onclick="navigateTo('about-page')"
+                                class="btn btn-outline-light btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&auto=format&fit=crop&q=80"
+                            class="d-block w-100" alt="Science Lab"
+                            onerror="this.src='https://placehold.co/1600x520/002171/ffffff?text=Modern+Science+Labs'">
+                        <div class="carousel-caption  text-center container">
+                            <span class="badge bg-info text-dark px-3 py-2 text-uppercase fw-bold mb-2">World-Class
+                                Facilities</span>
+                            <h1 class="display-4 fw-bold">Advanced Science & Robotics Labs</h1>
+                            <p class="fs-5">Empowering learners with hands-on STEM practices and modern digital
+                                libraries.</p>
+                            <a href="javascript:void(0)" onclick="navigateTo('student-page')"
+                                class="btn btn-warning btn-lg">Student Life</a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1600&auto=format&fit=crop&q=80"
+                            class="d-block w-100" alt="Students in Classroom"
+                            onerror="this.src='https://placehold.co/1600x520/1e293b/ffffff?text=Caring+Faculties'">
+                        <div class="carousel-caption  text-center container">
+                            <span class="badge bg-success px-3 py-2 text-uppercase fw-bold mb-2">Mentorship First</span>
+                            <h1 class="display-4 fw-bold">Compassionate & Certified Educators</h1>
+                            <p class="fs-5">A dedicated faculty focused on building future global leaders.</p>
+                            <a href="javascript:void(0)" onclick="navigateTo('teacher-page')"
+                                class="btn btn-light btn-lg">Meet Teachers</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#schoolHeroCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#schoolHeroCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+        <!-- Banner Section End (Slider with 3 Images) -->
+
+        <!-- School History Section Start -->
+        <section class="py-5 bg-white">
+            <div class="container py-3">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=800&auto=format&fit=crop&q=80"
+                                alt="School History" class="img-fluid rounded-4 shadow-lg"
+                                onerror="this.src='https://placehold.co/600x400/0d47a1/ffffff?text=School+History'">
+                            <div
+                                class="position-absolute bottom-0 start-0 bg-primary text-white p-3 rounded-bottom-4 ms-3 mb-3 d-none d-sm-block shadow">
+                                <h4 class="mb-0 fw-bold">30+ Years</h4>
+                                <small>Of Academic Legacy</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="badge bg-light text-primary border px-3 py-2 mb-2 fw-semibold">Discover Our
+                            Roots</span>
+                        <h2 class="fw-bold text-dark mb-3">Glorious History of Ideal Model High School</h2>
+                        <p class="text-secondary leading-relaxed">
+                            Established in 1995, Ideal Model High School & College commenced its journey with merely 85
+                            students and 7 dedicated instructors. Over three decades of persistence, institutional
+                            integrity, and modern pedagocical standards, it has blossomed into one of the country's most
+                            renowned educational institutions.
+                        </p>
+                        <p class="text-secondary">
+                            Today, our campus houses over 3,200 eager learners across Primary, Secondary, and Higher
+                            Secondary divisions with 100% board examination success rates and top-tier national
+                            rankings.
+                        </p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-6">
+                                <div class="p-3 border rounded-3 bg-light">
+                                    <h4 class="fw-bold text-primary mb-1">100%</h4>
+                                    <small class="text-muted">Board Examination Pass Rate</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border rounded-3 bg-light">
+                                    <h4 class="fw-bold text-primary mb-1">75+</h4>
+                                    <small class="text-muted">National Olympiad Honors</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-4 px-4 py-2" onclick="navigateTo('about-page')">Read Full
+                            Chronicle <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- School History Section End -->
+
+        <!-- Academic Section Start -->
+        <section class="py-5 bg-light">
+            <div class="container py-3">
+                <div class="section-title">
+                    <h2>Academic Programs</h2>
+                    <div class="divider"></div>
+                    <p>Structured curriculum designed to stimulate critical thinking and holistic skill formation.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Science Group Card -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-custom p-4 text-center">
+                            <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                                style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                <i class="fa-solid fa-atom"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark">Science Division</h5>
+                            <p class="text-muted small">Specialized in Physics, Chemistry, Biology, Higher Math and
+                                Robotics innovation labs.</p>
+                            <span class="badge bg-primary-subtle text-primary fw-semibold mt-auto py-2">Class 9 -
+                                12</span>
+                        </div>
+                    </div>
+                    <!-- Business Studies Card -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-custom p-4 text-center">
+                            <div class="bg-success text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                                style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark">Business Studies</h5>
+                            <p class="text-muted small">Focus on Accounting, Finance, Management, and early-stage
+                                entrepreneurial fundamentals.</p>
+                            <span class="badge bg-success-subtle text-success fw-semibold mt-auto py-2">Class 9 -
+                                12</span>
+                        </div>
+                    </div>
+                    <!-- Humanities Card -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-custom p-4 text-center">
+                            <div class="bg-warning text-dark rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                                style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                <i class="fa-solid fa-landmark"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark">Humanities & Arts</h5>
+                            <p class="text-muted small">Nurturing History, Civics, Economics, Sociology, and Literature
+                                appreciation.</p>
+                            <span class="badge bg-warning-subtle text-dark fw-semibold mt-auto py-2">Class 9 - 12</span>
+                        </div>
+                    </div>
+                    <!-- Primary & Junior Card -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-custom p-4 text-center">
+                            <div class="bg-info text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                                style="width: 70px; height: 70px; font-size: 1.8rem;">
+                                <i class="fa-solid fa-shapes"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark">Junior & Primary</h5>
+                            <p class="text-muted small">Interactive early childhood education focusing on morals,
+                                phonics, and curiosity building.</p>
+                            <span class="badge bg-info-subtle text-info fw-semibold mt-auto py-2">Play - Class 8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Academic Section End -->
+
+        <!-- Teacher Section Start -->
+        <section class="py-5 bg-white">
+            <div class="container py-3">
+                <div class="section-title">
+                    <h2>Distinguished Faculty</h2>
+                    <div class="divider"></div>
+                    <p>Meet our veteran department heads leading the standard of high academic rigor.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card card-custom">
+                            <div class="teacher-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80"
+                                    alt="Prof. Rashida Sultana"
+                                    onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Rashida+Sultana'">
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title fw-bold mb-1">Rashida Sultana, M.Sc</h5>
+                                <p class="text-primary fw-semibold small mb-2">Head of Mathematics</p>
+                                <p class="text-muted small mb-3">18 years of teaching expertise in Pure & Higher
+                                    Mathematics.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-light text-secondary border"><i
+                                            class="fa-solid fa-award text-warning"></i> National Best Teacher '23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom">
+                            <div class="teacher-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80"
+                                    alt="Dr. Anwar Hossain"
+                                    onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Dr+Anwar+Hossain'">
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title fw-bold mb-1">Dr. Anwar Hossain, Ph.D</h5>
+                                <p class="text-primary fw-semibold small mb-2">Head of English Department</p>
+                                <p class="text-muted small mb-3">Cambridge certified trainer with focus on spoken &
+                                    communicative English.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-light text-secondary border"><i
+                                            class="fa-solid fa-book-open text-info"></i> Author of 4 Grammars</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-custom">
+                            <div class="teacher-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80"
+                                    alt="Farzana Akter"
+                                    onerror="this.src='https://placehold.co/400x300/0d47a1/ffffff?text=Farzana+Akter'">
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title fw-bold mb-1">Farzana Akter, M.A</h5>
+                                <p class="text-primary fw-semibold small mb-2">Senior Bangla Faculty</p>
+                                <p class="text-muted small mb-3">Bengali Literature specialist and chief coordinator of
+                                    Cultural Club.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-light text-secondary border"><i
+                                            class="fa-solid fa-feather text-success"></i> Bangla Academy Fellow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary px-4 fw-semibold" onclick="navigateTo('teacher-page')">View
+                        All Faculty Members <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- Teacher Section End -->
+
+        <!-- Notice Section Start -->
+        <section class="py-5 bg-light">
+            <div class="container py-3">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="badge bg-danger text-white mb-2"><i class="fa-solid fa-bullhorn me-1"></i>
+                            Announcements</span>
+                        <h2 class="fw-bold text-dark">Institutional Notice Board</h2>
+                        <p class="text-secondary">Keep track of upcoming term examinations, government notifications,
+                            scholarship schedules, and institutional events.</p>
+                        <button class="btn btn-warning text-dark fw-bold px-4 py-2 mt-2"
+                            onclick="downloadNoticePdf('All_Notices_Schedule.pdf')">
+                            <i class="fa-solid fa-file-arrow-down me-2"></i> Download Complete Notice PDF
+                        </button>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="notice-board p-3">
+                            <!-- Notice Item 1 -->
+                            <div class="notice-item">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-primary text-white text-center rounded p-2" style="min-width: 58px;">
+                                        <div class="fw-bold fs-5 lh-1">28</div>
+                                        <small style="font-size: 0.72rem;">SEP</small>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold text-dark">Annual Sports & Cultural Week Registration
+                                            2026</h6>
+                                        <small class="text-muted"><i class="fa-regular fa-clock me-1"></i> Published:
+                                            Today | For: All Students</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary"
+                                    onclick="downloadNoticePdf('Sports_Week_2026.pdf')"><i
+                                        class="fa-solid fa-download"></i></button>
+                            </div>
+                            <!-- Notice Item 2 -->
+                            <div class="notice-item">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-success text-white text-center rounded p-2" style="min-width: 58px;">
+                                        <div class="fw-bold fs-5 lh-1">15</div>
+                                        <small style="font-size: 0.72rem;">OCT</small>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold text-dark">Second Mid-Term Examination Routine Published
+                                        </h6>
+                                        <small class="text-muted"><i class="fa-regular fa-clock me-1"></i> Published: 2
+                                            days ago | For: Class 6 to 12</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary"
+                                    onclick="downloadNoticePdf('Exam_Routine_Midterm.pdf')"><i
+                                        class="fa-solid fa-download"></i></button>
+                            </div>
+                            <!-- Notice Item 3 -->
+                            <div class="notice-item">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-warning text-dark text-center rounded p-2" style="min-width: 58px;">
+                                        <div class="fw-bold fs-5 lh-1">05</div>
+                                        <small style="font-size: 0.72rem;">NOV</small>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold text-dark">Notice Regarding SSC Model Test Form Fill-up
+                                        </h6>
+                                        <small class="text-muted"><i class="fa-regular fa-clock me-1"></i> Published: 5
+                                            days ago | For: Class 10</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-secondary"
+                                    onclick="downloadNoticePdf('SSC_Model_Test.pdf')"><i
+                                        class="fa-solid fa-download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Notice Section End -->
+
+        <!-- Footer Section Start -->
+        <footer class="big-footer">
+            <div class="container pb-5">
+                <div class="row g-4">
+                    <!-- Col 1: Brand details -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="fw-bold">Ideal Model School</h5>
+                        <p class="text-secondary small leading-relaxed">
+                            Committed to cultivating intellectual curiosity, moral responsibility, and global leadership
+                            in
+                            young learners through world-standard education.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('home-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Home</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('about-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> About Us</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('teacher-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Faculty</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('student-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Students</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('result-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Results</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Academic Sections -->
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <h5>Academics</h5>
+                        <ul class="list-unstyled small d-flex flex-column gap-2">
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Science Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Business Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Humanities Wing</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('academic-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Academic Calendar</a></li>
+                            <li><a href="javascript:void(0)" onclick="navigateTo('login-page')"><i
+                                        class="fa-solid fa-angle-right me-1"></i> Student Portal</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Contact & Location info -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5>Get In Touch</h5>
+                        <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+                            <li><i class="fa-solid fa-location-dot text-warning me-2"></i> Plot 12, Road 05, Sector 4,
+                                Uttara, Dhaka-1230</li>
+                            <li><i class="fa-solid fa-phone text-warning me-2"></i> +880 1712-345678, 02-9876543</li>
+                            <li><i class="fa-solid fa-envelope text-warning me-2"></i> admissions@idealmodel.edu.bd</li>
+                            <li><i class="fa-solid fa-clock text-warning me-2"></i> Sun - Thu: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ix. Footer Section (Banglish: Copyright sub-footer) -->
+            <div class="sub-footer">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                            &copy; 2026 <strong>Ideal Model High School & College</strong>. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </main>
+    <!-- Full Home Page End -->
+
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
